@@ -1,13 +1,14 @@
-<!-- ## Live Demo
+## Live Demo
 
-Check out the live demo of the Book Store on Netlify: [Book Store](https://exquisite-chaja-b72f58.netlify.app/) -->
+Check out the live demo of the Book Store on Netlify: [Book Store](https://bookstore-react-ssr.onrender.com)
+
+Note: Since this is a free instance, it may need more time to start the request
 
 ## Features
 
 - TypeScript and React: Leverage the benefits of static typing and the component-based architecture of React for a robust and maintainable codebase.
 
 - Redux: Provides a predictable state management solution by enforcing a unidirectional data flow
-
 
 ## Getting Started in Local
 
@@ -47,7 +48,6 @@ Start the server
 Now you're ready to efficiently manage your tasks!
 
 ## Usage
-
 
 ## Technologies Used
 
