@@ -26,7 +26,13 @@ nav {
   padding: 2em;
   border: 2px solid #e4c3bd;
   width: 300px;
-  height: 400px;
+  height: 280px;
+}
+
+.card:hover {
+  cursor: grab;
+  background-color: #d39f96;
+
 }
 
 

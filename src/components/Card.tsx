@@ -26,7 +26,7 @@ const Card: React.FC<BookProps> = ({book}) => {
     <div className="card" onClick={handleEdit}>
       <h2>{book.name}</h2>
       <p>Category: {book.category}</p>
-      <p>Description: {book.description.length > 50 ? book.description.slice(0, 50) + '...' : book.description}</p>
+      {/* <p>Description: {book.description.length > 50 ? book.description.slice(0, 50) + '...' : book.description}</p> */}
       <p>Price: ${book.price.toFixed(2)}</p>
       <button onClick={handleDelete}>Delete</button>
     </div>
