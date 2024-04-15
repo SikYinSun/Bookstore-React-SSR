@@ -16,7 +16,7 @@ function EditPopUp(props : EditPopUpProps) {
   const [portalElement, setPortalElement] = useState<HTMLElement | null>(null);
   const dispatch = useDispatch();
   
-  const handleInput = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const handleInput = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const {name, value} = event.target;
    
     setData((prev) => {
@@ -69,8 +69,8 @@ function EditPopUp(props : EditPopUpProps) {
           <div>
             <label >
               Description:
-              <input type='text' name='description' defaultValue={data?.description} onChange={handleInput}/>
             </label>
+              <textarea name='description' defaultValue={data?.description} onChange={handleInput}/>
           </div>
             <button className='submit-button' type='submit'>Edit Book</button>
         </form>

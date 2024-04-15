@@ -26,7 +26,7 @@ function AddPopUp(props : AddPopUpProps) {
     return Math.floor(Math.random() * 1000); 
   };
 
-  const handleInput = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const handleInput = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const {name, value} = event.target;
     setData((prev) => ({
       ...prev,
@@ -41,6 +41,7 @@ function AddPopUp(props : AddPopUpProps) {
 
     dispatch(addBook({id, ...data}));
     props.setTrigger(false);
+    setData(initialData);
   }
   
   const handleClose= () =>{
@@ -80,8 +81,8 @@ function AddPopUp(props : AddPopUpProps) {
           <div>
             <label>
               Description:
-              <input type='text' name='description' value={data.description} onChange={handleInput}/>
             </label>
+              <textarea name='description' value={data.description} onChange={handleInput}/>
           </div>
           <button className='submit-button' type='submit'>Add New Book</button>
         </form>
